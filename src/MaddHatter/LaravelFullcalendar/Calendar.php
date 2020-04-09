@@ -30,11 +30,14 @@ class Calendar
      */
     protected $defaultOptions = [
         'header' => [
-            'left' => 'prev,next today',
-            'center' => 'title',
-            'right' => 'month,agendaWeek,agendaDay',
+            'right' => 'prev,next today',
+            'left' => 'title',
+            'center' => 'month,agendaWeek,agendaDay',
         ],
         'eventLimit' => true,
+        'selectable' => true,
+        'allDaySlot' => false,
+        'selectHelper'=> true,
     ];
 
     /**
